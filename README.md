@@ -8,13 +8,13 @@ To implement the instructions in this post, you will need the following accounts
 * A Docker hub account – [how to register for docker id](https://success.docker.com/article/how-do-you-register-for-a-docker-id)
 * A GitHub account – [sign up for a new GitHub account](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account)
 
-<br /><br />
+<br />
 
 ## Architecture
 
 <img width="1042" alt="architecture-screenshot" src="images/Architecture.png">
 
-<br /><br />
+<br />
 
 
 ## Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
