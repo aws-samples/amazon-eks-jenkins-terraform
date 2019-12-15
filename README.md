@@ -12,8 +12,8 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 
 
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
-cd spring-petclinic
+git clone https://github.com/aws-samples/amazon-eks-jenkins-terraform
+cd amazon-eks-jenkins-terraform
 ./mvnw package
 java -jar target/*.jar
 ```
