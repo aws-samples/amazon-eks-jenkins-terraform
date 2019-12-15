@@ -1,13 +1,23 @@
 # Continuous Intergration on Amazon EKS
 
+## Prerequisites
+To implement the instructions in this post, you will need the following accounts:
+
+* An AWS account – [how to create a new AWS account] (https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
+* A Docker hub account – [how to register for docker id] (https://success.docker.com/article/how-do-you-register-for-a-docker-id)
+* A GitHub account – [sign up for a new GitHub account] (https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account)
+
+## Architecture
+
 <img width="1042" alt="architecture-screenshot" src="images/Architecture.png">
 
-# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
 
-## Understanding the Spring Petclinic application with a few diagrams
+## Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
+
+### Understanding the Spring Petclinic application with a few diagrams
 
 
-## Running petclinic locally
+### Running petclinic locally
 Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) application built using [Maven](https://spring.io/guides/gs/maven/). You can build a jar file and run it from the command line:
 
 
