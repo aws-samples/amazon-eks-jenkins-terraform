@@ -1,6 +1,6 @@
 # This file is created in a sample branch
 variable "region" {
-  default = "us-west-2"
+  default = "us-east-1"
 }
 variable "environment" {
   default = "Development"
