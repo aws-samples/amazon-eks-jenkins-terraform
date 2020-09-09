@@ -1,5 +1,6 @@
+# This file is created in a sample branch
 variable "region" {
-  default = "us-east-1"
+  default = "us-west-2"
 }
 variable "environment" {
   default = "Development"
@@ -32,5 +33,7 @@ variable "instance_ami" {
 
 }
 variable "keyname" {
-  
+  default = "Sharan-keypair-2-us-west-2"
 }
+
+
