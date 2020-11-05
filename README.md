@@ -10,6 +10,10 @@ To implement the instructions in this post, you will need the following accounts
 
 <br />
 
+## Contributors
+
+Irshad A Buchh, AWS
+
 ## Architecture
 
 <img width="1042" alt="architecture-screenshot" src="images/Architecture.png">
