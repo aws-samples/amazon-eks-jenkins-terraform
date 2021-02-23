@@ -5,6 +5,18 @@ resource "aws_vpc" "development-vpc" {
     Name = "${var.environment}-VPC"
   }
 }
+resource "aws_subnet" "subnet-dynamic" {
+  #goes thrugh our subnet list
+  for_each = { for subnet in var.subnets : subnet.availability_zone => subnet.cidr_block }
+  #creates our subnets for each key value pair
+  availability_zone    = each.key
+  vpc_id               = "${aws_vpc.development-vpc.id}"
+  tags = {
+    Name = "${var.environment}-Public-Subnet-1"
+  }
+  cidr_block     = each.value[0]
+}
+
 resource "aws_subnet" "public-subnet-1" {
   cidr_block        = "${var.public_subnet_1_cidr}"
   vpc_id            = "${aws_vpc.development-vpc.id}"
@@ -13,6 +25,7 @@ resource "aws_subnet" "public-subnet-1" {
     Name = "${var.environment}-Public-Subnet-1"
   }
 }
+
 resource "aws_subnet" "public-subnet-2" {
   cidr_block        = "${var.public_subnet_2_cidr}"
   vpc_id            = "${aws_vpc.development-vpc.id}"

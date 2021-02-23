@@ -7,6 +7,13 @@ variable "environment" {
 variable "vpc_cidr" {
   description = "VPC cidr block"
 }
+variable subnets {
+  description = "Subnets configuration"
+  type = list(object({
+    availability_zone = string
+    cidr_block = list(string)
+  }))
+}
 variable "public_subnet_1_cidr" {
   description = "Public Subnet 1 cidr block"
 }
