@@ -5,7 +5,7 @@ env:
     JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
     DOCKER_REPO_USER: "ibuchh"
     DOCKER_REPO_NAME: "petclinic-spinnaker-jenkins"
-    ECR_REPOSITORY_URI: "890123456789.dkr.ecr.us-east-1.amazonaws.com/petclinic"
+    ECR_REPOSITORY_URI: "XXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/petclinic"
   parameter-store:
     LOGIN_PASSWORD: /CodeBuild/dockerLoginPassword
     LOGIN_USER: /CodeBuild/dockerLoginUser
